@@ -442,7 +442,7 @@
     padding: 0;
   }
   body {
-    margin-left: 16.5;
+    margin: auto 0;
     width: 1440px;
     height: 100vh;
     font-family: "IBM Plex Sans", sans-serif;
@@ -457,7 +457,6 @@
   body .tabletDesktopImage {
     display: inline-block;
     position: relative;
-    left: 71%;
     top: -4%;
     width: 312px;
     height: 468px;
