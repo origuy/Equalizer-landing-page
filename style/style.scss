@@ -72,7 +72,7 @@ $priceMonthFontSize: 2rem;
 $priceMonthLetterSpacing: 0.02rem;
 
 $headerBgPositionBottom: 20rem;
-$bodyBgPositionX: 0%;
+$bodyBgPositionX: 24%;
 $bodyBgPositionY: 350%;
 
 $mainSectionFullWidth: 100%;
@@ -99,8 +99,9 @@ $btnHeight: 61px;
 		height: 100vh;
 		font-family: "IBM Plex Sans", sans-serif;
 		background-image: url(/images/bg-main-mobile.png);
-		background-position: $bodyBgPositionX $bodyBgPositionY;
+		background-position: $bodyBgPositionX ;
 		background-repeat: no-repeat;
+		background-size: cover;
 		position: relative;
 		.tabletDesktopImage {
 			display: none;
@@ -327,6 +328,7 @@ $btnHeight: 61px;
 		height: 100vh;
 		font-family: "IBM Plex Sans", sans-serif;
 		background-image: url(/images/bg-main-tablet.png);
+		background-position: -12rem -8rem;
 		position: relative;
 		background-repeat: no-repeat;
 

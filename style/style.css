@@ -24,8 +24,9 @@
     height: 100vh;
     font-family: "IBM Plex Sans", sans-serif;
     background-image: url(/images/bg-main-mobile.png);
-    background-position: 0% 350%;
+    background-position: 24%;
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
   }
   body .tabletDesktopImage {
@@ -72,7 +73,7 @@
     position: absolute;
   }
   main .main-image-wrapper .main-top-bg .whiteBg {
-    background-color: #fcfaf9;
+    background-color: transparent;
     height: 9.8rem;
     position: relative;
   }
@@ -221,6 +222,7 @@
     height: 100vh;
     font-family: "IBM Plex Sans", sans-serif;
     background-image: url(/images/bg-main-tablet.png);
+    background-position: -12rem -8rem;
     position: relative;
     background-repeat: no-repeat;
   }
@@ -278,7 +280,7 @@
     position: absolute;
   }
   main .main-image-wrapper .main-top-bg .whiteBg {
-    background-color: #fcfaf9;
+    background-color: transparent;
     height: 9.8rem;
     position: relative;
   }
