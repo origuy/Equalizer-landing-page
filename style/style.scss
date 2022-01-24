@@ -147,7 +147,7 @@ $btnHeight: 61px;
 				z-index: -2;
 				position: absolute;
 				.whiteBg {
-					background-color: $mainWhiteColor;
+					background-color: transparent;
 					height: 9.8rem;
 					position: relative;
 					// top: 9.8rem;
@@ -382,7 +382,7 @@ $btnHeight: 61px;
 				z-index: -2;
 				position: absolute;
 				.whiteBg {
-					background-color: $mainWhiteColor;
+					background-color: transparent;
 					height: 9.8rem;
 					position: relative;
 					// top: 9.8rem;
@@ -570,24 +570,24 @@ $btnHeight: 61px;
 		padding: 0;
 	}
 	body {
-        margin-left: 16.5;
+		margin-left: 16.5;
 		width: 1440px;
 		height: 100vh;
 		font-family: "IBM Plex Sans", sans-serif;
 		position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        overflow-x: hidden;
-        background-image: url(/images/bg-main-desktop.png);
-        background-repeat: no-repeat;
+		left: 50%;
+		transform: translateX(-50%);
+		overflow-x: hidden;
+		background-image: url(/images/bg-main-desktop.png);
+		background-repeat: no-repeat;
 
 		.tabletDesktopImage {
 			display: inline-block;
 			position: relative;
 			left: 71%;
 			top: -4%;
-            width: 312px;
-            height: 468px;
+			width: 312px;
+			height: 468px;
 		}
 	}
 	.header-wrapper {
@@ -610,7 +610,7 @@ $btnHeight: 61px;
 				font-size: $mobileMainBodyFontSize;
 				line-height: $mobileMainBodyLineHeight;
 				margin-bottom: $mobileMainBodyPaddingBottom;
-                width: 825px;
+				width: 825px;
 			}
 		}
 	}
@@ -618,7 +618,7 @@ $btnHeight: 61px;
 	main {
 		width: 100%;
 		height: $mainSectionFullHeight;
-        margin-top: 30.6rem;
+		margin-top: 30.6rem;
 		margin-bottom: 6.4rem;
 		position: relative;
 		bottom: 37rem;
@@ -631,8 +631,8 @@ $btnHeight: 61px;
 				margin-left: 6.4rem;
 				width: 312px;
 				height: 642px;
-                position: relative;
-                bottom: 150px;
+				position: relative;
+				bottom: 150px;
 			}
 			.main-top-bg {
 				width: 100vw;
