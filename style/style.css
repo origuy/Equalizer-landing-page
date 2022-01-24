@@ -1,1 +1,664 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+/* === === === === ===
+    Main Variables
+=== === === === === */
+/* Colors*/
+/* Typography */
+/* Buttons */
+/* === === === === === ===
+    Responsive Variables
+=== === === === === === */
+/* Mobile */
+@media only screen and (max-width: 766px) {
+  html {
+    font-size: 10px;
+  }
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 97%;
+    height: 100vh;
+    font-family: "IBM Plex Sans", sans-serif;
+    background-image: url(/images/bg-main-mobile.png);
+    background-position: 0% 350%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  body .tabletDesktopImage {
+    display: none;
+  }
+  .header-wrapper {
+    margin-top: 4rem;
+    margin-left: 2.4rem;
+  }
+  .header-wrapper .header-section .header-mainH2 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.45rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 6.6rem;
+  }
+  .header-wrapper .header-section .header-paragraph {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 6.6rem;
+  }
+  main {
+    width: 103%;
+    height: 1024px;
+    margin-bottom: 6.4rem;
+    position: relative;
+  }
+  main .main-image-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .main-image-wrapper .main-top-image {
+    width: 270px;
+    height: 556px;
+  }
+  main .main-image-wrapper .main-top-bg {
+    width: 100vw;
+    z-index: -2;
+    position: absolute;
+  }
+  main .main-image-wrapper .main-top-bg .whiteBg {
+    background-color: #fcfaf9;
+    height: 9.8rem;
+    position: relative;
+  }
+  main .main-image-wrapper .main-top-bg .blackBg {
+    background-color: #191826;
+    height: calc(600px - 9.8rem);
+    border-radius: 2rem;
+    position: relative;
+    top: 1rem;
+    background-image: url(/images/svg/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 258px;
+  }
+  main .main-bottom {
+    z-index: 2;
+    height: 546px;
+    width: 100vw;
+    background-color: #fa7453;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    padding: 4.8rem 3.7rem;
+  }
+  main .main-bottom .main-bottom-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    height: 100%;
+  }
+  main .main-bottom .main-bottom-info .main-bottom-info-header {
+    color: #fcfaf9;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: bold;
+  }
+  main .main-bottom .main-bottom-info .main-bottom-info-p {
+    color: #fcfaf9;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  main .main-bottom .main-bottom-info .priceWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.6rem;
+  }
+  main .main-bottom .main-bottom-info .priceWrapper .price {
+    font-size: 6.5rem;
+    line-height: 5.2rem;
+    color: #fcfaf9;
+    font-weight: 700;
+  }
+  main .main-bottom .main-bottom-info .priceWrapper .month {
+    font-size: 2rem;
+    letter-spacing: 0.02rem;
+    line-height: 3.2rem;
+    color: #fcfaf9;
+  }
+  main .main-bottom .main-bottom-info .button-group .btn {
+    width: 296px;
+    height: 61px;
+    border-radius: 1.2rem;
+    font-size: 1.8rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  main .main-bottom .main-bottom-info .button-group img {
+    font-size: 1.8rem;
+    vertical-align: middle;
+  }
+  main .main-bottom .main-bottom-info .button-group .iosBtn {
+    border: none;
+    background-color: #191826;
+    color: #fcfaf9;
+    margin-bottom: 1.6rem;
+  }
+  main .main-bottom .main-bottom-info .button-group .iosBtn:hover {
+    border: none;
+    background-color: #66e2dc;
+    color: #fcfaf9;
+    margin-bottom: 1.6rem;
+  }
+  main .main-bottom .main-bottom-info .button-group .androidBtn {
+    border: none;
+    background-color: #fcfaf9;
+    color: #191826;
+  }
+  main .main-bottom .main-bottom-info .button-group .androidBtn:hover {
+    border: none;
+    background-color: #ffb964;
+    color: #191826;
+  }
+  .footer-section {
+    margin-top: 4rem;
+    margin-left: 2.4rem;
+  }
+  .footer-section .header-mainH1 {
+    margin-bottom: 3.2rem;
+  }
+  .footer-section .footer-section-p {
+    font-size: 1.6rem;
+    margin-bottom: 6.4rem;
+  }
+  .footer-section .social-wrapper {
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-bottom: 8rem;
+  }
+  .footer-section .social-wrapper path {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .footer-section .social-wrapper path:hover {
+    fill: #fa7453;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  /* tablet */
+  html {
+    font-size: 10px;
+  }
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 97%;
+    height: 100vh;
+    font-family: "IBM Plex Sans", sans-serif;
+    background-image: url(/images/bg-main-tablet.png);
+    position: relative;
+    background-repeat: no-repeat;
+  }
+  body .tabletDesktopImage {
+    display: inline-block;
+    position: relative;
+    left: 71%;
+    top: -4%;
+  }
+  .header-wrapper {
+    margin-top: 4rem;
+    margin-left: 2.4rem;
+    position: relative;
+    bottom: 40rem;
+    width: calc(100vw - 266px);
+  }
+  .header-wrapper .header-section .header-mainH2 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.73px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 6.6rem;
+  }
+  .header-wrapper .header-section .header-paragraph {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 6.6rem;
+  }
+  main {
+    width: 100%;
+    height: 834px;
+    margin-bottom: 6.4rem;
+    position: relative;
+    bottom: 37rem;
+  }
+  main .main-image-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    position: relative;
+    margin: 0 4rem;
+  }
+  main .main-image-wrapper .main-top-image {
+    margin-left: 6.4rem;
+    width: 270px;
+    height: 556px;
+  }
+  main .main-image-wrapper .main-top-bg {
+    width: 100vw;
+    z-index: -2;
+    position: absolute;
+  }
+  main .main-image-wrapper .main-top-bg .whiteBg {
+    background-color: #fcfaf9;
+    height: 9.8rem;
+    position: relative;
+  }
+  main .main-image-wrapper .main-top-bg .blackBg {
+    background-color: #191826;
+    width: 700px;
+    height: calc(600px - 9.8rem);
+    border-radius: 2rem;
+    position: relative;
+    top: 1rem;
+    background-image: url(/images/svg/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: top left 250px;
+    background-size: 258px;
+  }
+  main .main-bottom {
+    z-index: 2;
+    height: 546px;
+    width: 400px;
+    background-color: #fa7453;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    padding: 4.8rem 4.8rem;
+    margin-left: calc(6.4rem + 210px);
+    position: relative;
+    bottom: 29.5rem;
+  }
+  main .main-bottom .main-bottom-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    height: 100%;
+  }
+  main .main-bottom .main-bottom-info .main-bottom-info-header {
+    color: #fcfaf9;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: bold;
+  }
+  main .main-bottom .main-bottom-info .main-bottom-info-p {
+    color: #fcfaf9;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  main .main-bottom .main-bottom-info .priceWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.6rem;
+  }
+  main .main-bottom .main-bottom-info .priceWrapper .price {
+    font-size: 6.5rem;
+    line-height: 5.2rem;
+    color: #fcfaf9;
+    font-weight: 700;
+  }
+  main .main-bottom .main-bottom-info .priceWrapper .month {
+    font-size: 2rem;
+    letter-spacing: 0.02rem;
+    line-height: 3.2rem;
+    color: #fcfaf9;
+  }
+  main .main-bottom .main-bottom-info .button-group .btn {
+    width: 296px;
+    height: 61px;
+    border-radius: 1.2rem;
+    font-size: 1.8rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  main .main-bottom .main-bottom-info .button-group img {
+    font-size: 1.8rem;
+    vertical-align: middle;
+  }
+  main .main-bottom .main-bottom-info .button-group .iosBtn {
+    border: none;
+    background-color: #191826;
+    color: #fcfaf9;
+    margin-bottom: 1.6rem;
+  }
+  main .main-bottom .main-bottom-info .button-group .iosBtn:hover {
+    border: none;
+    background-color: #66e2dc;
+    color: #fcfaf9;
+    margin-bottom: 1.6rem;
+  }
+  main .main-bottom .main-bottom-info .button-group .androidBtn {
+    border: none;
+    background-color: #fcfaf9;
+    color: #191826;
+  }
+  main .main-bottom .main-bottom-info .button-group .androidBtn:hover {
+    border: none;
+    background-color: #ffb964;
+    color: #191826;
+  }
+  .footer-section {
+    position: relative;
+    bottom: 28rem;
+    margin-left: 2.4rem;
+  }
+  .footer-section .wrapperForFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-section .header-mainH1 {
+    margin-bottom: 3.2rem;
+  }
+  .footer-section .footer-section-p {
+    font-size: 1.6rem;
+    margin-bottom: 6.4rem;
+    width: 366px;
+  }
+  .footer-section .social-wrapper {
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-bottom: 8.4rem;
+  }
+  .footer-section .social-wrapper path {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .footer-section .social-wrapper path:hover {
+    fill: #fa7453;
+  }
+}
+
+@media only screen and (min-width: 1439px) {
+  /* Desktop */
+  html {
+    font-size: 10px;
+  }
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin-left: 16.5;
+    width: 1440px;
+    height: 100vh;
+    font-family: "IBM Plex Sans", sans-serif;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    overflow-x: hidden;
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+  }
+  body .tabletDesktopImage {
+    display: inline-block;
+    position: relative;
+    left: 71%;
+    top: -4%;
+    width: 312px;
+    height: 468px;
+  }
+  .header-wrapper {
+    margin-top: 4rem;
+    margin-left: 2.4rem;
+    position: relative;
+    bottom: 40rem;
+    width: 1000px;
+  }
+  .header-wrapper .header-section .header-mainH2 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.73px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 6.6rem;
+  }
+  .header-wrapper .header-section .header-paragraph {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 6.6rem;
+    width: 825px;
+  }
+  main {
+    width: 100%;
+    height: 834px;
+    margin-top: 30.6rem;
+    margin-bottom: 6.4rem;
+    position: relative;
+    bottom: 37rem;
+  }
+  main .main-image-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    position: relative;
+    margin: 0 4rem;
+  }
+  main .main-image-wrapper .main-top-image {
+    margin-left: 6.4rem;
+    width: 312px;
+    height: 642px;
+    position: relative;
+    bottom: 150px;
+  }
+  main .main-image-wrapper .main-top-bg {
+    width: 100vw;
+    z-index: -2;
+    position: absolute;
+  }
+  main .main-image-wrapper .main-top-bg .whiteBg {
+    background-color: transparent;
+    height: 9.8rem;
+    position: relative;
+  }
+  main .main-image-wrapper .main-top-bg .blackBg {
+    background-color: #191826;
+    width: 1100px;
+    height: 600px;
+    border-radius: 2rem;
+    position: relative;
+    top: 1rem;
+    background-image: url(/images/svg/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: top 20px left 300px;
+    background-size: 258px;
+  }
+  main .main-bottom {
+    z-index: 2;
+    height: 625px;
+    width: 446px;
+    background-color: #fa7453;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    padding: 4.8rem 4.8rem;
+    margin-left: calc(6.4rem + 480px);
+    position: relative;
+    bottom: 45rem;
+  }
+  main .main-bottom .main-bottom-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    height: 100%;
+  }
+  main .main-bottom .main-bottom-info .main-bottom-info-header {
+    color: #fcfaf9;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: bold;
+  }
+  main .main-bottom .main-bottom-info .main-bottom-info-p {
+    color: #fcfaf9;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  main .main-bottom .main-bottom-info .priceWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.6rem;
+  }
+  main .main-bottom .main-bottom-info .priceWrapper .price {
+    font-size: 6.5rem;
+    line-height: 5.2rem;
+    color: #fcfaf9;
+    font-weight: 700;
+  }
+  main .main-bottom .main-bottom-info .priceWrapper .month {
+    font-size: 2rem;
+    letter-spacing: 0.02rem;
+    line-height: 3.2rem;
+    color: #fcfaf9;
+  }
+  main .main-bottom .main-bottom-info .button-group .btn {
+    width: 296px;
+    height: 61px;
+    border-radius: 1.2rem;
+    font-size: 1.8rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  main .main-bottom .main-bottom-info .button-group img {
+    font-size: 1.8rem;
+    vertical-align: middle;
+  }
+  main .main-bottom .main-bottom-info .button-group .iosBtn {
+    border: none;
+    background-color: #191826;
+    color: #fcfaf9;
+    margin-bottom: 1.6rem;
+  }
+  main .main-bottom .main-bottom-info .button-group .iosBtn:hover {
+    border: none;
+    background-color: #66e2dc;
+    color: #fcfaf9;
+    margin-bottom: 1.6rem;
+  }
+  main .main-bottom .main-bottom-info .button-group .androidBtn {
+    border: none;
+    background-color: #fcfaf9;
+    color: #191826;
+  }
+  main .main-bottom .main-bottom-info .button-group .androidBtn:hover {
+    border: none;
+    background-color: #ffb964;
+    color: #191826;
+  }
+  .footer-section {
+    position: relative;
+    bottom: 28rem;
+    margin-left: 2.4rem;
+  }
+  .footer-section .wrapperForFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-section .header-mainH1 {
+    margin-bottom: 3.2rem;
+  }
+  .footer-section .footer-section-p {
+    font-size: 1.6rem;
+    margin-bottom: 6.4rem;
+    width: 366px;
+  }
+  .footer-section .social-wrapper {
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-bottom: 8.4rem;
+  }
+  .footer-section .social-wrapper path {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .footer-section .social-wrapper path:hover {
+    fill: #fa7453;
+  }
+}
+/*# sourceMappingURL=style.css.map */

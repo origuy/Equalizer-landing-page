@@ -1,0 +1,777 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+/* === === === === ===
+    Main Variables
+=== === === === === */
+
+/* Colors*/
+
+$mainCyanColor: #66e2dc;
+$mainOrangeColor: #fa7453;
+$mainYellowColor: #ffb964;
+$mainWhiteColor: #fcfaf9;
+$mainBlackColor: #191826;
+
+/* Typography */
+
+$desktopMainHeaderFontSize: 8.8rem;
+$desktopMainHeaderLineHeight: 8.8rem;
+$desktopMainHeaderLetterSpacing: -0.01rem;
+$desktopMainHeaderFontWeight: bold;
+
+$desktopSecondaryHeaderFontSize: 4rem;
+$desktopSecondaryHeaderLineHeight: 5.2rem;
+$desktopSecondaryHeaderFontWeight: bold;
+
+$desktopMainBodyFontSize: 2rem;
+$desktopMainBodyLineHeight: 3.4rem;
+
+$desktopSecondaryBodyFontSize: 1.6rem;
+$desktopSecondaryBodyLineHeight: 2.6rem;
+
+/* Buttons */
+
+$btnIOSColor: $mainWhiteColor;
+$btnIOSHoverColor: $mainWhiteColor;
+$btnIOSBackgroundColor: $mainBlackColor;
+$btnIOSHoverBackgroundColor: $mainCyanColor;
+
+$btnAndroidColor: $mainBlackColor;
+$btnAndroidHoverColor: $mainBlackColor;
+$btnAndroidBackgroundColor: $mainWhiteColor;
+$btnAndroidHoverBackgroundColor: $mainYellowColor;
+
+/* === === === === === ===
+    Responsive Variables
+=== === === === === === */
+
+/* Mobile */
+
+$mobileMainHeaderFontSize: 4rem;
+$mobileMainHeaderLineHeight: 4.8rem;
+$mobileMainHeaderLetterSpacing: -0.45rem;
+$mobileMainHeaderFontWeight: 700;
+$mobileMainHeaderPaddingBottom: 2rem;
+$mobileMainHeaderPaddingTop: 6.6rem;
+
+$mobileSecondaryHeaderFontSize: 3.2rem;
+$mobileSecondaryHeaderLineHeight: 4rem;
+$mobileSecondaryHeaderFontWeight: 700;
+
+$mobileMainBodyFontSize: 1.6rem;
+$mobileMainBodyLineHeight: 2.6rem;
+$mobileMainBodyPaddingBottom: 6.6rem;
+
+$mobileSecondaryBodyFontSize: 1.8rem;
+$mobileSecondaryBodyLineHeight: 2.8rem;
+
+$priceFontSize: 6.5rem;
+$priceLineHeight: 5.2rem;
+$priceMonthLineHeight: 3.2rem;
+$priceMonthFontSize: 2rem;
+$priceMonthLetterSpacing: 0.02rem;
+
+$headerBgPositionBottom: 20rem;
+$bodyBgPositionX: 0%;
+$bodyBgPositionY: 350%;
+
+$mainSectionFullWidth: 100%;
+$mainSectionFullHeight: 1024px;
+$mainSectionPaddingTop: 17rem;
+
+$mainImagePositionTop: 7rem;
+
+$mainBottomHeight: 546px;
+
+$btnWidth: 296px;
+$btnHeight: 61px;
+@media only screen and (max-width: 766px) {
+	html {
+		font-size: 10px;
+	}
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		width: 97%;
+		height: 100vh;
+		font-family: "IBM Plex Sans", sans-serif;
+		background-image: url(/images/bg-main-mobile.png);
+		background-position: $bodyBgPositionX $bodyBgPositionY;
+		background-repeat: no-repeat;
+		position: relative;
+		.tabletDesktopImage {
+			display: none;
+		}
+	}
+	.header-wrapper {
+		margin-top: 4rem;
+		margin-left: 2.4rem;
+
+		.header-section {
+			.header-mainH2 {
+				font-size: $mobileMainHeaderFontSize;
+				line-height: $mobileMainHeaderLineHeight;
+				letter-spacing: $mobileMainHeaderLetterSpacing;
+				font-weight: $mobileMainHeaderFontWeight;
+				margin-bottom: $mobileMainHeaderPaddingBottom;
+				margin-top: $mobileMainHeaderPaddingTop;
+			}
+			.header-paragraph {
+				font-size: $mobileMainBodyFontSize;
+				line-height: $mobileMainBodyLineHeight;
+				margin-bottom: $mobileMainBodyPaddingBottom;
+			}
+		}
+	}
+
+	main {
+		width: 103%;
+		height: $mainSectionFullHeight;
+		margin-bottom: 6.4rem;
+		position: relative;
+
+		.main-image-wrapper {
+			display: flex;
+			justify-content: center;
+			// background-image: linear-gradient(180deg, $mainWhiteColor 22%, $mainBlackColor 22%, $mainBlackColor 100%);
+			.main-top-image {
+				width: 270px;
+				height: 556px;
+			}
+
+			.main-top-bg {
+				width: 100vw;
+				z-index: -2;
+				position: absolute;
+				.whiteBg {
+					background-color: $mainWhiteColor;
+					height: 9.8rem;
+					position: relative;
+					// top: 9.8rem;
+				}
+				.blackBg {
+					background-color: $mainBlackColor;
+					height: calc(600px - 9.8rem);
+					border-radius: 2rem;
+					position: relative;
+					top: 1rem;
+					background-image: url(/images/svg/bg-pattern-2.svg);
+					background-repeat: no-repeat;
+					background-position: top;
+					background-size: 258px;
+				}
+			}
+		}
+		.main-bottom {
+			z-index: 2;
+			height: $mainBottomHeight;
+			width: 100vw;
+			background-color: $mainOrangeColor;
+			border-radius: 2rem;
+			margin-top: 3rem;
+			padding: 4.8rem 3.7rem;
+
+			.main-bottom-info {
+				display: flex;
+				justify-content: space-between;
+				flex-flow: column nowrap;
+				height: 100%;
+				.main-bottom-info-header {
+					color: $mainWhiteColor;
+					font-size: $mobileSecondaryHeaderFontSize;
+					line-height: $mobileSecondaryHeaderLineHeight;
+					font-weight: $desktopSecondaryHeaderFontWeight;
+				}
+				.main-bottom-info-p {
+					color: $mainWhiteColor;
+					font-size: $mobileSecondaryBodyFontSize;
+					line-height: $mobileSecondaryBodyLineHeight;
+				}
+				.priceWrapper {
+					display: flex;
+					align-items: center;
+					gap: 1.6rem;
+					.price {
+						font-size: $priceFontSize;
+						line-height: $priceLineHeight;
+						color: $mainWhiteColor;
+						font-weight: 700;
+					}
+					.month {
+						font-size: $priceMonthFontSize;
+						letter-spacing: $priceMonthLetterSpacing;
+						line-height: $priceMonthLineHeight;
+						color: $mainWhiteColor;
+					}
+				}
+
+				.button-group {
+					.btn {
+						width: $btnWidth;
+						height: $btnHeight;
+						border-radius: 1.2rem;
+						font-size: 1.8rem;
+						transition: all 0.5s ease;
+					}
+					img {
+						font-size: 1.8rem;
+						vertical-align: middle;
+					}
+					.iosBtn {
+						border: none;
+						background-color: $btnIOSBackgroundColor;
+						color: $btnIOSColor;
+						margin-bottom: 1.6rem;
+					}
+					.iosBtn:hover {
+						border: none;
+						background-color: $btnIOSHoverBackgroundColor;
+						color: $btnIOSHoverColor;
+						margin-bottom: 1.6rem;
+					}
+					.androidBtn {
+						border: none;
+						background-color: $btnAndroidBackgroundColor;
+						color: $btnAndroidColor;
+					}
+					.androidBtn:hover {
+						border: none;
+						background-color: $btnAndroidHoverBackgroundColor;
+						color: $btnAndroidHoverColor;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-section {
+		margin-top: 4rem;
+		margin-left: 2.4rem;
+		.header-mainH1 {
+			margin-bottom: 3.2rem;
+		}
+		.footer-section-p {
+			font-size: 1.6rem;
+			margin-bottom: 6.4rem;
+		}
+		.social-wrapper {
+			width: 100px;
+			display: flex;
+			justify-content: space-evenly;
+			padding-bottom: 8rem;
+			path {
+				transition: all 0.5s ease;
+			}
+			path:hover {
+				fill: $mainOrangeColor;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 767px) {
+	/* tablet */
+
+	$mobileMainHeaderFontSize: 6.4rem;
+	$mobileMainHeaderLineHeight: 6.4rem;
+	$mobileMainHeaderLetterSpacing: -0.73px;
+	$mobileMainHeaderFontWeight: 700;
+	$mobileMainHeaderPaddingBottom: 2rem;
+	$mobileMainHeaderPaddingTop: 6.6rem;
+
+	$mobileSecondaryHeaderFontSize: 3.2rem;
+	$mobileSecondaryHeaderLineHeight: 4rem;
+	$mobileSecondaryHeaderFontWeight: 700;
+
+	$mobileMainBodyFontSize: 1.8rem;
+	$mobileMainBodyLineHeight: 2.8rem;
+	$mobileMainBodyPaddingBottom: 6.6rem;
+
+	$mobileSecondaryBodyFontSize: 1.8rem;
+	$mobileSecondaryBodyLineHeight: 2.8rem;
+
+	$priceFontSize: 6.5rem;
+	$priceLineHeight: 5.2rem;
+	$priceMonthLineHeight: 3.2rem;
+	$priceMonthFontSize: 2rem;
+	$priceMonthLetterSpacing: 0.02rem;
+
+	$headerBgPositionBottom: 20rem;
+	$bodyBgPositionX: 0%;
+	$bodyBgPositionY: 350%;
+
+	$mainSectionFullWidth: 100%;
+	$mainSectionFullHeight: 834px;
+	$mainSectionPaddingTop: 17rem;
+
+	$mainImagePositionTop: 7rem;
+
+	$mainBottomHeight: 546px;
+
+	$btnWidth: 296px;
+	$btnHeight: 61px;
+
+	html {
+		font-size: 10px;
+	}
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		width: 97%;
+		height: 100vh;
+		font-family: "IBM Plex Sans", sans-serif;
+		background-image: url(/images/bg-main-tablet.png);
+		position: relative;
+		background-repeat: no-repeat;
+
+		.tabletDesktopImage {
+			display: inline-block;
+			position: relative;
+			left: 71%;
+			top: -4%;
+		}
+	}
+	.header-wrapper {
+		margin-top: 4rem;
+		margin-left: 2.4rem;
+		position: relative;
+		bottom: 40rem;
+		width: calc(100vw - 266px);
+
+		.header-section {
+			.header-mainH2 {
+				font-size: $mobileMainHeaderFontSize;
+				line-height: $mobileMainHeaderLineHeight;
+				letter-spacing: $mobileMainHeaderLetterSpacing;
+				font-weight: $mobileMainHeaderFontWeight;
+				margin-bottom: $mobileMainHeaderPaddingBottom;
+				margin-top: $mobileMainHeaderPaddingTop;
+			}
+			.header-paragraph {
+				font-size: $mobileMainBodyFontSize;
+				line-height: $mobileMainBodyLineHeight;
+				margin-bottom: $mobileMainBodyPaddingBottom;
+			}
+		}
+	}
+
+	main {
+		width: 100%;
+		height: $mainSectionFullHeight;
+		margin-bottom: 6.4rem;
+		position: relative;
+		bottom: 37rem;
+		.main-image-wrapper {
+			display: flex;
+			justify-content: left;
+			position: relative;
+			margin: 0 4rem;
+			.main-top-image {
+				margin-left: 6.4rem;
+				width: 270px;
+				height: 556px;
+			}
+			.main-top-bg {
+				width: 100vw;
+				z-index: -2;
+				position: absolute;
+				.whiteBg {
+					background-color: $mainWhiteColor;
+					height: 9.8rem;
+					position: relative;
+					// top: 9.8rem;
+				}
+				.blackBg {
+					background-color: $mainBlackColor;
+					width: 700px;
+					height: calc(600px - 9.8rem);
+					border-radius: 2rem;
+					position: relative;
+					top: 1rem;
+					background-image: url(/images/svg/bg-pattern-2.svg);
+					background-repeat: no-repeat;
+					background-position: top left 250px;
+					background-size: 258px;
+				}
+			}
+		}
+		.main-bottom {
+			z-index: 2;
+			height: 546px;
+			width: 400px;
+			background-color: $mainOrangeColor;
+			border-radius: 2rem;
+			margin-top: 3rem;
+			padding: 4.8rem 4.8rem;
+			margin-left: calc(6.4rem + 210px);
+			position: relative;
+			bottom: 29.5rem;
+
+			.main-bottom-info {
+				display: flex;
+				justify-content: space-between;
+				flex-flow: column nowrap;
+				height: 100%;
+				.main-bottom-info-header {
+					color: $mainWhiteColor;
+					font-size: $mobileSecondaryHeaderFontSize;
+					line-height: $mobileSecondaryHeaderLineHeight;
+					font-weight: $desktopSecondaryHeaderFontWeight;
+				}
+				.main-bottom-info-p {
+					color: $mainWhiteColor;
+					font-size: $mobileSecondaryBodyFontSize;
+					line-height: $mobileSecondaryBodyLineHeight;
+				}
+				.priceWrapper {
+					display: flex;
+					align-items: center;
+					gap: 1.6rem;
+					.price {
+						font-size: $priceFontSize;
+						line-height: $priceLineHeight;
+						color: $mainWhiteColor;
+						font-weight: 700;
+					}
+					.month {
+						font-size: $priceMonthFontSize;
+						letter-spacing: $priceMonthLetterSpacing;
+						line-height: $priceMonthLineHeight;
+						color: $mainWhiteColor;
+					}
+				}
+
+				.button-group {
+					.btn {
+						width: $btnWidth;
+						height: $btnHeight;
+						border-radius: 1.2rem;
+						font-size: 1.8rem;
+						transition: all 0.5s ease;
+					}
+					img {
+						font-size: 1.8rem;
+						vertical-align: middle;
+					}
+					.iosBtn {
+						border: none;
+						background-color: $btnIOSBackgroundColor;
+						color: $btnIOSColor;
+						margin-bottom: 1.6rem;
+					}
+					.iosBtn:hover {
+						border: none;
+						background-color: $btnIOSHoverBackgroundColor;
+						color: $btnIOSHoverColor;
+						margin-bottom: 1.6rem;
+					}
+					.androidBtn {
+						border: none;
+						background-color: $btnAndroidBackgroundColor;
+						color: $btnAndroidColor;
+					}
+					.androidBtn:hover {
+						border: none;
+						background-color: $btnAndroidHoverBackgroundColor;
+						color: $btnAndroidHoverColor;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-section {
+		// margin-top: 4rem;
+		position: relative;
+		bottom: 28rem;
+		margin-left: 2.4rem;
+		.wrapperForFlex {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.header-mainH1 {
+			margin-bottom: 3.2rem;
+		}
+		.footer-section-p {
+			font-size: 1.6rem;
+			margin-bottom: 6.4rem;
+			width: 366px;
+		}
+		.social-wrapper {
+			width: 100px;
+			display: flex;
+			justify-content: space-evenly;
+			padding-bottom: 8.4rem;
+			path {
+				transition: all 0.5s ease;
+			}
+			path:hover {
+				fill: $mainOrangeColor;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1439px) {
+	/* Desktop */
+
+	$mobileMainHeaderFontSize: 6.4rem;
+	$mobileMainHeaderLineHeight: 6.4rem;
+	$mobileMainHeaderLetterSpacing: -0.73px;
+	$mobileMainHeaderFontWeight: 700;
+	$mobileMainHeaderPaddingBottom: 2rem;
+	$mobileMainHeaderPaddingTop: 6.6rem;
+
+	$mobileSecondaryHeaderFontSize: 3.2rem;
+	$mobileSecondaryHeaderLineHeight: 4rem;
+	$mobileSecondaryHeaderFontWeight: 700;
+
+	$mobileMainBodyFontSize: 1.8rem;
+	$mobileMainBodyLineHeight: 2.8rem;
+	$mobileMainBodyPaddingBottom: 6.6rem;
+
+	$mobileSecondaryBodyFontSize: 1.8rem;
+	$mobileSecondaryBodyLineHeight: 2.8rem;
+
+	$priceFontSize: 6.5rem;
+	$priceLineHeight: 5.2rem;
+	$priceMonthLineHeight: 3.2rem;
+	$priceMonthFontSize: 2rem;
+	$priceMonthLetterSpacing: 0.02rem;
+
+	$headerBgPositionBottom: 20rem;
+	$bodyBgPositionX: 0%;
+	$bodyBgPositionY: 350%;
+
+	$mainSectionFullWidth: 100%;
+	$mainSectionFullHeight: 834px;
+	$mainSectionPaddingTop: 17rem;
+
+	$mainImagePositionTop: 7rem;
+
+	$mainBottomHeight: 546px;
+
+	$btnWidth: 296px;
+	$btnHeight: 61px;
+
+	html {
+		font-size: 10px;
+	}
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	body {
+        margin-left: 16.5;
+		width: 1440px;
+		height: 100vh;
+		font-family: "IBM Plex Sans", sans-serif;
+		position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-x: hidden;
+        background-image: url(/images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+
+		.tabletDesktopImage {
+			display: inline-block;
+			position: relative;
+			left: 71%;
+			top: -4%;
+            width: 312px;
+            height: 468px;
+		}
+	}
+	.header-wrapper {
+		margin-top: 4rem;
+		margin-left: 2.4rem;
+		position: relative;
+		bottom: 40rem;
+		width: 1000px;
+
+		.header-section {
+			.header-mainH2 {
+				font-size: $mobileMainHeaderFontSize;
+				line-height: $mobileMainHeaderLineHeight;
+				letter-spacing: $mobileMainHeaderLetterSpacing;
+				font-weight: $mobileMainHeaderFontWeight;
+				margin-bottom: $mobileMainHeaderPaddingBottom;
+				margin-top: $mobileMainHeaderPaddingTop;
+			}
+			.header-paragraph {
+				font-size: $mobileMainBodyFontSize;
+				line-height: $mobileMainBodyLineHeight;
+				margin-bottom: $mobileMainBodyPaddingBottom;
+                width: 825px;
+			}
+		}
+	}
+
+	main {
+		width: 100%;
+		height: $mainSectionFullHeight;
+        margin-top: 30.6rem;
+		margin-bottom: 6.4rem;
+		position: relative;
+		bottom: 37rem;
+		.main-image-wrapper {
+			display: flex;
+			justify-content: left;
+			position: relative;
+			margin: 0 4rem;
+			.main-top-image {
+				margin-left: 6.4rem;
+				width: 312px;
+				height: 642px;
+                position: relative;
+                bottom: 150px;
+			}
+			.main-top-bg {
+				width: 100vw;
+				z-index: -2;
+				position: absolute;
+				.whiteBg {
+					background-color: transparent;
+					height: 9.8rem;
+					position: relative;
+					// top: 9.8rem;
+				}
+				.blackBg {
+					background-color: $mainBlackColor;
+					width: 1100px;
+					height: 600px;
+					border-radius: 2rem;
+					position: relative;
+					top: 1rem;
+					background-image: url(/images/svg/bg-pattern-2.svg);
+					background-repeat: no-repeat;
+					background-position: top 20px left 300px;
+					background-size: 258px;
+				}
+			}
+		}
+		.main-bottom {
+			z-index: 2;
+			height: 625px;
+			width: 446px;
+			background-color: $mainOrangeColor;
+			border-radius: 2rem;
+			margin-top: 3rem;
+			padding: 4.8rem 4.8rem;
+			margin-left: calc(6.4rem + 480px);
+			position: relative;
+			bottom: 45rem;
+
+			.main-bottom-info {
+				display: flex;
+				justify-content: space-between;
+				flex-flow: column nowrap;
+				height: 100%;
+				.main-bottom-info-header {
+					color: $mainWhiteColor;
+					font-size: $mobileSecondaryHeaderFontSize;
+					line-height: $mobileSecondaryHeaderLineHeight;
+					font-weight: $desktopSecondaryHeaderFontWeight;
+				}
+				.main-bottom-info-p {
+					color: $mainWhiteColor;
+					font-size: $mobileSecondaryBodyFontSize;
+					line-height: $mobileSecondaryBodyLineHeight;
+				}
+				.priceWrapper {
+					display: flex;
+					align-items: center;
+					gap: 1.6rem;
+					.price {
+						font-size: $priceFontSize;
+						line-height: $priceLineHeight;
+						color: $mainWhiteColor;
+						font-weight: 700;
+					}
+					.month {
+						font-size: $priceMonthFontSize;
+						letter-spacing: $priceMonthLetterSpacing;
+						line-height: $priceMonthLineHeight;
+						color: $mainWhiteColor;
+					}
+				}
+
+				.button-group {
+					.btn {
+						width: $btnWidth;
+						height: $btnHeight;
+						border-radius: 1.2rem;
+						font-size: 1.8rem;
+						transition: all 0.5s ease;
+					}
+					img {
+						font-size: 1.8rem;
+						vertical-align: middle;
+					}
+					.iosBtn {
+						border: none;
+						background-color: $btnIOSBackgroundColor;
+						color: $btnIOSColor;
+						margin-bottom: 1.6rem;
+					}
+					.iosBtn:hover {
+						border: none;
+						background-color: $btnIOSHoverBackgroundColor;
+						color: $btnIOSHoverColor;
+						margin-bottom: 1.6rem;
+					}
+					.androidBtn {
+						border: none;
+						background-color: $btnAndroidBackgroundColor;
+						color: $btnAndroidColor;
+					}
+					.androidBtn:hover {
+						border: none;
+						background-color: $btnAndroidHoverBackgroundColor;
+						color: $btnAndroidHoverColor;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-section {
+		// margin-top: 4rem;
+		position: relative;
+		bottom: 28rem;
+		margin-left: 2.4rem;
+		.wrapperForFlex {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.header-mainH1 {
+			margin-bottom: 3.2rem;
+		}
+		.footer-section-p {
+			font-size: 1.6rem;
+			margin-bottom: 6.4rem;
+			width: 366px;
+		}
+		.social-wrapper {
+			width: 100px;
+			display: flex;
+			justify-content: space-evenly;
+			padding-bottom: 8.4rem;
+			path {
+				transition: all 0.5s ease;
+			}
+			path:hover {
+				fill: $mainOrangeColor;
+			}
+		}
+	}
+}
