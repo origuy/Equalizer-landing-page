@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot of the landing page](images\screenshots\screenshots.jpg)
+![screenshot of the landing page](/images\screenshots\screenshots.jpg)
 
 ### Links
 
